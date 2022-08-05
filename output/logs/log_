@@ -1,0 +1,8 @@
+2022-07-30 14:00:44  [ main:0 ] - [ INFO ]  open urlhttps://www.roots.com/on/demandware.store/Sites-RootsCA-Site/en_CA/Account-Show
+2022-07-30 14:00:44  [ main:336 ] - [ DEBUG ]  input username
+2022-07-30 14:00:44  [ main:602 ] - [ INFO ]  input password
+2022-07-30 14:00:48  [ main:4369 ] - [ INFO ]  click login button
+2022-07-30 14:25:48  [ main:0 ] - [ INFO ]  open urlhttps://www.roots.com/on/demandware.store/Sites-RootsCA-Site/en_CA/Account-Show
+2022-07-30 14:25:48  [ main:285 ] - [ DEBUG ]  input username
+2022-07-30 14:25:48  [ main:543 ] - [ INFO ]  input password
+2022-07-30 14:25:50  [ main:2342 ] - [ INFO ]  click login button

@@ -1,0 +1,10 @@
+testcases\BaseClass.class
+testcases\TestCase_addShoppingCart.class
+testcases\TestCase_login_data.class
+pages\LoginPage.class
+utilities\XLUtils.class
+testcases\test.class
+utilities\Reporting.class
+utilities\LastFilePath.class
+pages\SearchBar.class
+utilities\ReadConfig.class

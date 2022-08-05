@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ShoppingTestProject">
+	
+	<listeners>
+		<listener class-name="utilities.Reporting"/>
+	</listeners>
+
+	<test name="Add ShoppingCart">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+		<!-- <class name="testcases.TestCase_login_data"/> -->	
+		<class name="testcases.TestCase_addShoppingCart"/> 
+		</classes>
+	</test>
+</suite>
