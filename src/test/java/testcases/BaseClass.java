@@ -24,7 +24,6 @@ import utilities.ReadConfig;
 public class BaseClass {
 	
 	
-	
 
 	public static WebDriver driver;
 	public static Logger logger;

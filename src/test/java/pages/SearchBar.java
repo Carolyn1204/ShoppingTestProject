@@ -37,15 +37,25 @@ public class SearchBar {
 	@CacheLookup
 	WebElement view_bag;
 	
-	public void search(String search_contenct) throws Exception {
+	
+	public void search_icon_click() {
+		
 		search_icon.click();
-		Thread.sleep(3);
+	}
+	
+	public void search_input_click() {
+		
 		search_input.click();
-		Thread.sleep(3);
-		search_input.sendKeys(search_contenct);
-		Thread.sleep(3);
+	}
+	
+	public void search_input_sendkeys(String search_keywords) {
+		
+		search_input.sendKeys(search_keywords);
+	}
+	
+	public void press_enter() {
+		
 		search_input.sendKeys(Keys.RETURN);
-		Thread.sleep(3);
 	}
 	
 	public void click_bag_icon() {
@@ -55,5 +65,12 @@ public class SearchBar {
 	public void click_view_bag() {
 		view_bag.click();
 	}
+	
+	public void search(String search_keywords) throws Exception {
+		search_icon.click();
+		search_input.click();
+		search_input.sendKeys(search_keywords);
+		search_input.sendKeys(Keys.RETURN);
 
+}
 }

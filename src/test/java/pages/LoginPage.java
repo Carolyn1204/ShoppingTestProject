@@ -1,5 +1,6 @@
 package pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -11,6 +12,7 @@ public class LoginPage {
 	
 	
 	WebDriver driver;
+	Logger logger;
 
 	
 	public LoginPage(WebDriver driver){
@@ -36,15 +38,39 @@ public class LoginPage {
 
 	
 	public void setUsername(String uname) {
-		username.sendKeys(uname);
+		try {
+			username.sendKeys(uname);
+			
+		}catch(Exception e){
+			
+			logger.error(username+"sendingkeys fail!");
+		}
+		
 	}
 	
 	public void setPwd(String password) {
-		pwd.sendKeys(password);
+		try {
+			pwd.sendKeys(password);
+			
+		}catch(Exception e){
+			
+			logger.error(pwd+"sendingkeys fail!");
+		}
+		
+		
 	}
 	
 	public void click_signIn_button() {
-		signIn_button.click();
+		
+		try {
+			signIn_button.click();
+			
+		}catch(Exception e){
+			
+			logger.error(signIn_button+"click fail!");
+		}
+		
+		
 	}
 	
 	public void emptyUsername() {
